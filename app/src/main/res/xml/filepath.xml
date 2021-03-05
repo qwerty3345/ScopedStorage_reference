@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--  새로운 외부 경로  -->
+    <external-files-path
+        name="externalFilesPath"
+        path="/" />
+    <!--  기존 외부 경로  -->
+    <external-path
+        name="externalPath"
+        path="/" />
+    <!--  내부 경로  -->
+    <files-path
+        name="internalPath"
+        path="/" />
+</paths>

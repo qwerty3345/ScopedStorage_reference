@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnBrowseAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="앨범 보기 (RecyclerView)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddImageToInternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="이미지 저장 \n(내부저장소)"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAddImageToExternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="이미지 저장 \n(외부저장소)"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAddImageToDCIM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이미지 저장 \n(DCIM 폴더)"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="사진 촬영 후\n외부저장소 저장" />
+
+
+        <Button
+            android:id="@+id/btnDownloadFile"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="파일 다운로드\n(Mediastore)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPickFileInternal"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:textSize="12sp"
+            android:text="파일 선택해 저장소 복사\n(내부저장소, SAF)" />
+
+        <Button
+            android:id="@+id/btnPickFileExternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:layout_weight="10"
+            android:text="파일 선택해 저장소 복사\n(외부저장소, SAF)" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnSearchFile"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="파일 긁어오기" />
+    <Button
+        android:id="@+id/btnChangeFileName"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:text="파일이름 변경" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnRecordingFile"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="녹음기 이동" />
+    <Button
+        android:id="@+id/btn_test_activity"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:text="테스트 액티비티" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        tools:src="@drawable/add_internal_image" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
